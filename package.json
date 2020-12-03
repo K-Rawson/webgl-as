@@ -1,0 +1,38 @@
+{
+  "name": "webgl-as",
+  "version": "1.0.0",
+  "description": "A basic implementation of WebGL canvas written with AssemblyScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZoeDreams/webgl-as.git"
+  },
+  "keywords": [
+    "WebGL",
+    "AssemblyScript",
+    "WebAssembly",
+    "WASM",
+    "AS",
+    "GameDev",
+    "Graphics",
+    "3D"
+  ],
+  "author": "Kara Rawson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZoeDreams/webgl-as/issues"
+  },
+  "homepage": "https://github.com/ZoeDreams/webgl-as#readme",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.17.4"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.17.4"
+  }
+}
